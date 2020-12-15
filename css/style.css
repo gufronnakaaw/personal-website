@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home {
+  background-color: white;
+  height: 100vh;
+}
+
+.home .hero {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+.home .hero .img-author {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.home .hero .social-media {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.home .hero .social-media a {
+  text-decoration: none;
+  background-color: #1e272e;
+  padding: 12px;
+  margin: 0 10px;
+  display: flex;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: .1s;
+}
+
+.home .hero .social-media a i {
+  font-size: 20px;
+  color: #eaeaea;
+}
+
+.home .hero .social-media a:hover {
+  background-color: #444c52;
+}
+
+.home .hero .download-resume {
+  padding: 10px 25px;
+  outline: none;
+  cursor: pointer;
+  background-color: #1e272e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: .1s;
+}
+
+.home .hero .download-resume:hover {
+  background-color: #444c52;
+}
+
+.home .hero h2, .home .hero p {
+  margin-top: 10px;
+  color: #1e272e;
+}
+
+.home .hero p {
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
