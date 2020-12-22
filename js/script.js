@@ -1,5 +1,10 @@
 const btnDownload = document.querySelector('.download-resume');
 
+window.onload = function() {
+    document.querySelector('.overlay').style.display = "none";
+    document.querySelector('.loading-spinner').style.display = "none";
+}
+
 btnDownload.addEventListener('click', () => {
     Swal.fire({
         icon: 'info',
