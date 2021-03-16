@@ -1,11 +1,14 @@
 const btnDownload = document.querySelector('.download-resume');
+const hamburger = document.querySelector('.hamburger');
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.querySelector('.overlay');
 
-window.onload = function() {
-    setInterval(() => {
-        document.querySelector('.overlay').style.display = "none";
-        document.querySelector('.loading-spinner').style.display = "none";
-    }, 500);
-}
+// window.onload = function() {
+//     // setInterval(() => {
+//     // }, 500);
+//     document.querySelector('.overlay').style.display = "none";
+//     document.querySelector('.loading-spinner').style.display = "none";
+// }
 
 btnDownload.addEventListener('click', () => {
     Swal.fire({
@@ -20,9 +23,12 @@ btnDownload.addEventListener('click', () => {
 });
 
 
-const navbar = document.querySelector(".navbar");
-const sticky = navbar.offsetTop;
+hamburger.addEventListener('click', function(){
+    sidebar.classList.add('sidebar-active');
+    overlay.style.display = 'block';
+});
 
-window.addEventListener('scroll', () => {
-    (window.pageYOffset >= sticky) ? navbar.classList.add("navbar-fixed") : navbar.classList.remove("navbar-fixed")
+overlay.addEventListener('click', function(){
+    sidebar.classList.remove('sidebar-active');
+    this.style.display = 'none';
 });
