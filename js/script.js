@@ -32,3 +32,19 @@ overlay.addEventListener('click', function(){
     sidebar.classList.remove('sidebar-active');
     this.style.display = 'none';
 });
+
+
+const about = document.querySelector('#about')
+const skills = document.querySelector('#skills')
+const personalProject = document.querySelector('#personal-project')
+
+window.onscroll = function() {
+
+    if(Math.round(window.pageYOffset) > about.offsetTop && Math.round(window.pageYOffset) < skills.offsetTop){
+        hamburger.style.color = "white"
+    } else if(Math.round(window.pageYOffset) > personalProject.offsetTop){
+        hamburger.style.color = "white"
+    } else {
+        hamburger.style.color = "black"
+    }
+}

@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .overlay {
   position: fixed;
   display: none;
@@ -45,13 +49,14 @@
 .hamburger {
   position: fixed;
   right: 0;
+  z-index: 10;
 }
 
 .hamburger svg {
   cursor: pointer;
   margin: 5px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 .sidebar-active {
@@ -121,31 +126,31 @@ nav div .hire-me:hover {
   background: #f1c40f;
 }
 
-.home {
+#home {
   background-color: white;
   height: 100vh;
 }
 
-.home .hero {
+#home .hero {
   text-align: center;
   position: relative;
   top: 80px;
 }
 
-.home .hero .img-author {
+#home .hero .img-author {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 4px solid #1e272e;
 }
 
-.home .hero .social-media {
+#home .hero .social-media {
   display: flex;
   justify-content: center;
   margin: 40px 0;
 }
 
-.home .hero .social-media a {
+#home .hero .social-media a {
   text-decoration: none;
   background-color: #1e272e;
   padding: 12px;
@@ -156,16 +161,16 @@ nav div .hire-me:hover {
   transition: .1s;
 }
 
-.home .hero .social-media a i {
+#home .hero .social-media a i {
   font-size: 20px;
   color: #eaeaea;
 }
 
-.home .hero .social-media a:hover {
+#home .hero .social-media a:hover {
   background-color: #444c52;
 }
 
-.home .hero .download-resume {
+#home .hero .download-resume {
   padding: 10px 25px;
   outline: none;
   cursor: pointer;
@@ -176,17 +181,107 @@ nav div .hire-me:hover {
   transition: .1s;
 }
 
-.home .hero .download-resume:hover {
+#home .hero .download-resume:hover {
   background-color: #444c52;
 }
 
-.home .hero h2, .home .hero p {
+#home .hero h2, #home .hero p {
   margin-top: 10px;
   color: #1e272e;
 }
 
-.home .hero p {
+#home .hero p {
   font-weight: 300;
+}
+
+#about {
+  padding: 80px 0;
+  background-color: black;
+  color: white;
+}
+
+#about h2, #about p {
+  text-align: center;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skills p {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#skills img {
+  width: 68px;
+  height: 68px;
+}
+
+#personal-project {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#personal-project .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+#personal-project .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  max-height: 10%;
+}
+
+#personal-project .card img {
+  width: 100%;
+}
+
+#personal-project .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#personal-project .card .container {
+  padding: 2px 16px;
+}
+
+#personal-project a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 25px 0;
+}
+
+#footer .hire-me-bot {
+  padding: 10px 22px;
+  background: #f39c12;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+#footer .hire-me-bot a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .hire-me-bot:hover {
+  background: #f1c40f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -195,6 +290,13 @@ nav div .hire-me:hover {
   }
   nav .navbar ul {
     display: none;
+  }
+  #skills p {
+    font-size: 1rem;
+  }
+  #skills img {
+    width: 50px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
