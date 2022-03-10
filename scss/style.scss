@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 $black: black;
 $white: white;
@@ -11,7 +13,7 @@ $blackHover: #444c52;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', monospace;
 }
 
 html {
@@ -181,7 +183,7 @@ nav {
             
         }
     
-        .download-resume {
+        .download-cv {
             padding: 10px 25px;
             outline: none;
             cursor: pointer;
@@ -189,6 +191,8 @@ nav {
             border: none;
             border-radius: 5px;
             color: $white;
+            letter-spacing: 1px;
+            text-decoration: none;
             transition: .1s;
     
             &:hover {
