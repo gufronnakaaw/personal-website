@@ -150,10 +150,11 @@ nav {
         top: 80px;
     
         .img-author {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             border: 4px solid $blackV2;
+            object-fit: cover;
         }
     
         .social-media {
