@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/css/bootstrap-grid.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/animate.min.css" />
+    <script>
+        const domain = 'wildandev.com';
+    </script>
 </head>
 
 <body>
@@ -29,9 +32,10 @@
         <div class="sidebar">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#personal-project">Personal Project</a></li>
+                <li><a class="e-certificate">E-Certificate</a></li>
             </ul>
 
             <button class="contact-button">Contact Me</button>
@@ -62,64 +66,67 @@
     </section>
 
     <section id="about">
-        <h2 data-aos="fade-up">About Me</h2>
-        <div class="container" data-aos="fade-up" data-aos-duration="1200">
-            <p class="mt-3">Hi there, I'm wildan.</p>
-            <p>I'm a <b>Back-end Web Developer</b> who loves building dinamic websites and loves helping people learn
-                how to code. Based in Jakarta Selatan, Indonesia.</p>
+        <h2 data-aos="fade-up" data-aos-duration="1000"="">About</h2>
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1200">
+                <p class="mt-3">Hi there, I'm wildan.</p>
+                <p>I'm a <b>Back-end Web Developer</b> with one year work experience in <b>web development</b> and loves
+                    helping people learn how to code. Based in Jakarta Selatan, Indonesia.</p>
+            </div>
             <br>
-            <p>Currently learning another Back-end Development like Virtualization, Containerization, WebSockets,
-                WebServers, etc to improve my skills.</p>
+            <div data-aos="fade-up" data-aos-duration="1400">
+                <p>Currently learning Back-end Development like Virtualization, Containerization, WebSockets,
+                    WebServers, etc to improve my skills.</p>
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="my-5">
-        <h2 data-aos="fade-up">Skills</h2>
+    <section id="skills">
+        <h2 data-aos="zoom-in">Skills</h2>
 
         <div class="container-fluid">
             <div class="row" style="height: 500px;">
-                <div class="col-lg-6 d-flex justify-content-center px-0" data-aos="fade-up" data-aos-duration="1200">
+                <div class="col-lg-6 d-flex justify-content-center px-0" data-aos="fade-right" data-aos-duration="1200">
                     <p>These are some tools and softwares that i'm good at.</p>
                 </div>
 
-                <div class="col-lg-6 d-flex flex-column justify-content-around" data-aos="fade-up"
-                    data-aos-duration="1400">
+                <div class="col-lg-6 d-flex flex-column justify-content-around">
                     <div class="row d-flex justify-content-around">
-                        <img src="/img/html.svg" alt="html" title="html">
+                        <img data-aos="fade-left" src="/img/html.svg" alt="html" title="html">
 
-                        <img src="/img/css.svg" alt="css" title="css">
+                        <img data-aos="fade-left" src="/img/css.svg" alt="css" title="css">
 
-                        <img src="/img/js.svg" alt="javascript" title="javascript">
+                        <img data-aos="fade-left" src="/img/js.svg" alt="javascript" title="javascript">
 
-                        <img src="/img/php.svg" alt="php" title="php">
+                        <img data-aos="fade-left" src="/img/php.svg" alt="php" title="php">
 
                     </div>
 
                     <div class="row d-flex justify-content-around">
-                        <img src="/img/laravel.svg" alt="laravel" title="laravel">
+                        <img data-aos="fade-right" src="/img/laravel.svg" alt="laravel" title="laravel">
 
-                        <img src="/img/codeigniter.svg" alt="codeigniter" title="codeigniter">
+                        <img data-aos="fade-right" src="/img/codeigniter.svg" alt="codeigniter" title="codeigniter">
 
-                        <img src="/img/nodejs.svg" alt="nodejs" title="nodejs">
+                        <img data-aos="fade-right" src="/img/nodejs.svg" alt="nodejs" title="nodejs">
 
-                        <img src="/img/express.svg" alt="expressjs" title="expressjs">
+                        <img data-aos="fade-right" src="/img/express.svg" alt="expressjs" title="expressjs">
                     </div>
 
                     <div class="row d-flex justify-content-around">
-                        <img src="/img/github.svg" alt="github" title="github">
+                        <img data-aos="fade-left" src="/img/github.svg" alt="github" title="github">
 
-                        <img src="/img/git.svg" alt="git" title="git">
+                        <img data-aos="fade-left" src="/img/git.svg" alt="git" title="git">
 
-                        <img src="/img/postman.svg" alt="postman" title="postman">
+                        <img data-aos="fade-left" src="/img/postman.svg" alt="postman" title="postman">
 
-                        <img src="/img/sql.svg" alt="sql" title="sql">
+                        <img data-aos="fade-left" src="/img/sql.svg" alt="sql" title="sql">
                     </div>
 
                     <div class="row d-flex justify-content-around">
 
-                        <img src="/img/sass.svg" alt="sass" title="sass">
+                        <img data-aos="fade-right" src="/img/sass.svg" alt="sass" title="sass">
 
-                        <img src="/img/reactjs.svg" alt="reactjs" title="reactjs">
+                        <img data-aos="fade-right" src="/img/reactjs.svg" alt="reactjs" title="reactjs">
                     </div>
                 </div>
             </div>
@@ -130,8 +137,7 @@
         <h2 data-aos="fade-up">Personal Project</h2>
 
         <div class="container-fluid">
-
-            <div class="row mt-4" data-aos="fade-up" data-wow-duration="2000">
+            <div class="row mt-5" data-aos="fade-up" data-wow-duration="2000">
                 <div class="col-md-4 mb-5">
                     <div class="card">
                         <a href="/img/wefo.jpg" data-fslightbox="wefo-project">
@@ -142,7 +148,7 @@
                             <h4><b>WeFo</b></h4>
                             <p>WeFo is a weather app. You can search the current weather by city.</p>
                             <br>
-                            <a href="https://wefo.wildanlab.tech" target="_blank">
+                            <a href="https://wefo.wildandev.com" target="_blank">
                                 See
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </a>
@@ -176,7 +182,7 @@
                         <div class="project-info">
                             <h4><b>Permoment</b></h4>
                             <p>Coming Soon</p>
-                            <!-- <a href="https://permoment.wildanlab.tech" target="_blank">
+                            <!-- <a href="https://permoment.wildandev.com" target="_blank">
                                 See
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </a> -->
@@ -189,6 +195,10 @@
                 <a href="https://github.com/gufronnakaaw" target="_blank">
                     More Projects
                 </a>
+                <span>|</span>
+                <a class="e-certificate">
+                    E-Certificate
+                </a>
             </div>
         </div>
     </section>
@@ -199,8 +209,11 @@
             Contact Me
         </button>
 
-        <p>Gufronnaka Arif Wildan -
+        <p>Copyright
             <script>const date = new Date(); document.write(date.getFullYear())</script>
+            <span style="color: #f39c12;">
+                <script>document.write(domain)</script>
+            </span>
         </p>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

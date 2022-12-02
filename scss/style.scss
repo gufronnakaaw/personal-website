@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-$black: black;
+$black: #24252a;
 $white: white;
 $green: #45a048;
 $greenHover: #64b767;
@@ -13,10 +13,11 @@ $blackHover: #444c52;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -29,7 +30,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
 }
 
@@ -42,9 +43,9 @@ html {
     border-top-color: $white;
     animation: 0.5s spin infinite ease;
     position: fixed;
-    top: -100%; 
-    right: -100%; 
-    left: -100%; 
+    top: -100%;
+    right: -100%;
+    left: -100%;
     bottom: -100%;
     margin: auto;
     z-index: 100;
@@ -60,6 +61,7 @@ html {
     position: fixed;
     right: 0;
     z-index: 10;
+    display: none;
 
     svg {
         cursor: pointer;
@@ -75,7 +77,7 @@ html {
 
 nav {
     div {
-        background: $black;
+        background: black;
         width: 220px;
         position: fixed;
         z-index: 10;
@@ -88,14 +90,14 @@ nav {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
+
         ul {
             list-style: none;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+
             li {
                 padding: 20px 0;
 
@@ -104,16 +106,15 @@ nav {
                     color: $white;
                     display: inline-block;
 
-                    
                     &::after {
-                        content: '';
+                        content: "";
                         display: block;
                         width: 0;
                         height: 2px;
                         background: $white;
-                        transition: width .2s;
+                        transition: width 0.2s;
                     }
-                    
+
                     &:hover::after {
                         width: 100%;
                     }
@@ -123,51 +124,50 @@ nav {
     }
 }
 
-
 #home {
     background-color: $white;
     height: 100vh;
-    
+
     .hero {
         text-align: center;
         position: relative;
-        top: 80px;
-    
+        top: 50%;
+        transform: translateY(-50%);
+
         .img-author {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            border: 4px solid $blackV2;
+            border: 4px solid black;
             object-fit: cover;
         }
-    
+
         .social-media {
             display: flex;
             justify-content: center;
             margin: 40px 0;
-    
+
             a {
                 text-decoration: none;
-                background-color: $blackV2;
+                background-color: black;
                 padding: 12px;
                 margin: 0 10px;
                 display: flex;
                 border-radius: 50%;
                 text-decoration: none;
-                transition: .1s;
-    
+                transition: 0.1s;
+
                 i {
                     font-size: 20px;
                     color: #eaeaea;
                 }
-    
+
                 &:hover {
                     background-color: $blackHover;
                 }
             }
-            
         }
-    
+
         .download-cv {
             padding: 10px 25px;
             outline: none;
@@ -178,14 +178,15 @@ nav {
             color: $white;
             letter-spacing: 1px;
             text-decoration: none;
-            transition: .1s;
-    
+            transition: 0.1s;
+
             &:hover {
                 background-color: $blackHover;
             }
         }
 
-        h2, p{
+        h2,
+        p {
             margin-top: 10px;
             color: $blackV2;
         }
@@ -196,38 +197,39 @@ nav {
     }
 }
 
-#about{
+#about {
     padding: 80px 0;
-    background-color: $black;
+    background-color: black;
     color: $white;
 
-    h2, p {
+    h2,
+    p {
         text-align: center;
     }
 }
 
 #skills {
+    padding: 50px 0;
 
     h2 {
         text-align: center;
     }
 
     p {
-        display: flex; 
+        display: flex;
         align-items: center;
         font-size: 1.1rem;
         text-align: center;
     }
 
     img {
-        width: 68px; 
+        width: 68px;
         height: 68px;
     }
 }
 
-
 #personal-project {
-    background-color: $black;
+    background-color: black;
     color: $white;
     text-align: center;
     padding: 50px 0;
@@ -238,17 +240,19 @@ nav {
     }
 
     .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        background-color: rgb(26, 26, 26);
         transition: 0.3s;
-        width: 50%;
+        // width: 50%;
+        padding: 50px;
+        border-radius: 15px;
 
         img {
             width: 100%;
-            border-radius: 12px;
+            border-radius: 15px;
         }
 
         &:hover {
-          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          transform: rotate(2deg);
         }
 
         .project-info {
@@ -256,7 +260,6 @@ nav {
                 margin: 10px 0;
             }
         }
-        
     }
 
     a {
@@ -264,8 +267,11 @@ nav {
         color: $white;
         // display: flex;
         // justify-content: flex-end;
+
+        &:hover {
+            color: #f39c12;
+        }
     }
-      
 }
 
 .contact-button {
@@ -286,7 +292,7 @@ nav {
 
 #footer {
     text-align: center;
-    background-color: $black;
+    background-color: black;
     color: $white;
     padding: 25px 0;
 
@@ -301,7 +307,7 @@ nav {
             button {
                 display: block;
             }
-            
+
             ul {
                 display: none;
             }
