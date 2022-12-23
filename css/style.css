@@ -195,6 +195,11 @@ nav div ul li a:hover::after {
 #skills img {
   width: 68px;
   height: 68px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#skills img:hover {
+  transform: rotate(5deg);
 }
 
 #personal-project {
@@ -214,7 +219,7 @@ nav div ul li a:hover::after {
   border-radius: 15px;
 }
 #personal-project .card img {
-  width: 100%;
+  width: 70%;
   border-radius: 15px;
 }
 #personal-project .card:hover {
